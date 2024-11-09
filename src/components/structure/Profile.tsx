@@ -10,8 +10,12 @@ export const menuItems = [
     { path: "/logout", name: "Sign out" }
 ];
 
-export const Profile = () => {
+interface ProfileProps{
+    className?: string;
+}
+
+export const Profile: React.FC<ProfileProps> = ({className}) => {
      return (
-        <RMenuItems {...{menuItems}} />
+        <RMenuItems {...{menuItems, className}} />
      )
 }

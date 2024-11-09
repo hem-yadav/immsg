@@ -17,9 +17,15 @@ const Item = ({name}) => {
 }
 
 //@ts-ignore
-export const RMenuItems = ({menuItems}) => {
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+
+//@ts-ignore
+export const RMenuItems = ({menuItems, className}) => {
      return (
-        <Menu as="div" className="relative ml-3">
+        <Menu as="div" className={classNames("relative ml-3", className)}>
         <div>
           <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
             <span className="absolute -inset-1.5" />

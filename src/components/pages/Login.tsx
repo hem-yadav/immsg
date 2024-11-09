@@ -38,6 +38,8 @@ export const Login: React.FC = () => {
             value={formData.userName}
             onChange={(e) => setFormData({ userName: e.target.value })}
             type="text"
+            placeholder='Username'
+            className='border border-gray-outline rounded-md h-[40px] px-2'
           />
         </div>
         <div className="input">
@@ -45,6 +47,8 @@ export const Login: React.FC = () => {
             value={formData.password}
             onChange={(e) => setFormData({ password: e.target.value })}
             type="password"
+            placeholder='Password'
+            className='border border-gray-outline rounded-md h-[40px] px-2'
           />
         </div>
         <div className="button">

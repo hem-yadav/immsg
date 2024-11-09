@@ -11,7 +11,8 @@ export default {
     extend: {
       colors: {
         'primary': '#1f2937',
-        'gray-1': '#d1d5db',
+        'gray-outline': '#d1d5db',
+        'gray-1': '#f3f4f6',
         'gray-2': '#9ca3af'
       },
     },

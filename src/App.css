@@ -55,7 +55,7 @@
   }
   
   .inputs .input input {
-    height: 30px;
+    font-size: 14px;
     width: 300px;
     margin: 5px 0;
   }

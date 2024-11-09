@@ -26,8 +26,8 @@ export const RInput = ({ handleChange, icon: Icon, placeholder }) => {
         <Input 
             //@ts-ignore
             type="text" name="full_name" as={Fragment}>
-            {({ focus, hover }) => <div className='flex justify-center border border-gray-1 items-center bg-white/5 rounded-lg px-3'>
-            <MagnifyingGlassIcon className="block h-4 w-4 text-gray-2 group-data-[open]:hidden"/>
+            {({ focus, hover }) => <div className='flex justify-center border border-gray-outline items-center bg-white/5 rounded-lg px-3 w-1/2'>
+            <MagnifyingGlassIcon className="block h-5 w-5 text-gray-2 group-data-[open]:hidden"/>
             <input onChange={onChange} placeholder={placeholder} className={clsx(
             'block w-full rounded-lg border-none bg-transparent py-1.5 px-1.5 text-sm/6',
             'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25'
