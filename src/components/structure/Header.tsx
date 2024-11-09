@@ -26,7 +26,7 @@ export const RenderHeader = () => {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between border:none sm:border-b mb-2">
           <div className="flex items-center justify-center sm:items-stretch sm:justify-start">
-            <Logo />
+            <Logo className="h-8 w-auto"/>
           </div>
           <div className="flex flex-1 items-center justify-center">
             <RSearch />

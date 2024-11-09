@@ -3,6 +3,7 @@ import React, { useState, ReactNode } from "react";
 import { AuthContext } from "./AuthContext"; // Import AuthContext from the new file
 import { RenderHeader } from "../components/structure/Header";
 import { RenderRoutes } from "../components/structure";
+import { RenderFooter } from "../components/structure/Footer";
 
 interface User {
     name: string;
@@ -36,7 +37,10 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
             <>
                 <RenderHeader />
                 <RenderRoutes />
-                {children}
+                <div className="flex-auto">
+                    {children}
+                </div>
+                <RenderFooter />
             </>
         </AuthContext.Provider>
     );

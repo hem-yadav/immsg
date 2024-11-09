@@ -1,12 +1,13 @@
 import React from 'react';
 
-export const Logo = () => {
+//@ts-ignore
+export const Logo = ({className}) => {
      return (
         <div className="flex shrink-0 items-center">
             <img
             alt="Your Company"
             src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-            className="h-8 w-auto"
+            className={className}
             />
         </div>
      )

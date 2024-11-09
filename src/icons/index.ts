@@ -1,0 +1,5 @@
+export {FacebookIcon} from './Facebook'
+export {InstagramIcon} from './Instagram'
+export {XIcon} from './Twitter'
+export {GithubIcon} from './Github'
+export {YoutubeIcon} from './Youtube'
