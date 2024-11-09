@@ -1,14 +1,14 @@
 
 
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { RSearch } from '../reusable'
 import { Logo } from './Logo'
 import { RenderMenu } from './Menu'
-import { menuItems, Profile } from './Profile'
+import { Profile } from './Profile'
 import { User } from './User'
 
-const navigation = [
+/* const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
@@ -18,7 +18,7 @@ const navigation = [
 //@ts-ignore
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
-}
+} */
 
 export const RenderHeader = () => {
   return (
@@ -45,7 +45,7 @@ export const RenderHeader = () => {
             <Profile className='hidden sm:block'/>
             <div className="sm:hidden">
               {/* Mobile menu button*/}
-              <DisclosureButton className="rounded-md p-2 text-gray-1 hover:bg-gray-1 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <DisclosureButton className="group rounded-md p-2 text-gray-1 hover:bg-gray-1 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden text-gray-2" />

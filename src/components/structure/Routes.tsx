@@ -1,6 +1,4 @@
-import React from 'react';
-import { Link, Route, Routes } from "react-router-dom";
-import { NavItem } from '../../types';
+import { Route, Routes } from "react-router-dom";
 import { useAuthData } from "../../auth/AuthContext";
 import { nav } from "./navigation";
 

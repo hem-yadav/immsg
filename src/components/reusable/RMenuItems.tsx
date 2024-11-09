@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
 //@ts-ignore
 const Item = ({name}) => {

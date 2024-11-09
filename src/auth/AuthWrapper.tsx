@@ -2,7 +2,7 @@
 import React, { useState, ReactNode } from "react";
 import { AuthContext } from "./AuthContext"; // Import AuthContext from the new file
 import { RenderHeader } from "../components/structure/Header";
-import { RenderMenu, RenderRoutes } from "../components/structure";
+import { RenderRoutes } from "../components/structure";
 
 interface User {
     name: string;

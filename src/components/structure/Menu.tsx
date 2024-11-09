@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { Link, Route, Routes } from "react-router-dom";
-import { NavItem } from '../../types';
-import { useAuthData } from "../../auth/AuthContext";
+import { Link } from "react-router-dom";
+// import { useAuthData } from "../../auth/AuthContext";
 import { nav } from "./navigation";
-import { Profile } from './Profile';
-import { Login } from './Login';
 
 //@ts-ignore
 function classNames(...classes) {
@@ -17,7 +14,7 @@ interface RenderMenuProps{
 
 export const RenderMenu: React.FC<RenderMenuProps> = ({ className }) => {
      const [ selectedMenu, setSelectedMenu ] = useState("/");
-     const { user, logout } = useAuthData();
+     // const { user, logout } = useAuthData();
 
      return (
           <div className={classNames('flex', className)}>
