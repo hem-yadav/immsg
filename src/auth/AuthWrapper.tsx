@@ -18,7 +18,7 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
 
     const login = (userName: string, password: string): Promise<string> => {
         return new Promise((resolve, reject) => {
-            if (password === "password") {
+            if (password) {
                 setUser({ name: userName, isAuthenticated: true });
                 resolve("success");
             } else {
@@ -35,7 +35,7 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
         <AuthContext.Provider value={{ user, login, logout }}>
             <>
                 <RenderHeader />
-                <RenderMenu />
+                {/* <RenderMenu /> */}
                 <RenderRoutes />
                 {children}
             </>

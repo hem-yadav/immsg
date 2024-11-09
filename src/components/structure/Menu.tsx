@@ -31,7 +31,7 @@ export const RenderMenu = () => {
               </div>
                {user.isAuthenticated ? <Profile /> : <Login/> }
             </div>
-        
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
             <div className="container mx-auto mt-2 flex justify-center space-x-4">
                {nav.map((r, i) => {
                     if ((!r.isPrivate || user.isAuthenticated) && r.isMenu) {
