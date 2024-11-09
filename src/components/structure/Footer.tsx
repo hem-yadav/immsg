@@ -34,7 +34,7 @@ return (
   <div className='flex flex-row justify-between items-center gap-8 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
     <Logo className="h-12 w-auto"/>
     <div className='flex-1 flex flex-col items-center'>
-        <div className='flex'>
+        <div className='flex py-2 mb-4 border-b border-gray-outline'>
             {footerItems.map((item) => (
                <Link to={item.path}>
                     <div
