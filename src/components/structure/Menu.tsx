@@ -25,7 +25,7 @@ export const RenderMenu = () => {
                          onClick={()=>setSelectedMenu(item.path)}
                          aria-current={item.path === selectedMenu ? 'page' : undefined}
                          className={classNames(
-                              item.path === selectedMenu ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              item.path === selectedMenu ? 'bg-gray-1 text-black' : 'bg-white text-black',
                          'rounded-md px-3 py-2 text-sm font-medium',
                          )}
                     >
