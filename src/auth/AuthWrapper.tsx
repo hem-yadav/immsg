@@ -35,7 +35,7 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
         <AuthContext.Provider value={{ user, login, logout }}>
             <>
                 <RenderHeader />
-                {/* <RenderMenu /> */}
+                <RenderMenu />
                 <RenderRoutes />
                 {children}
             </>
