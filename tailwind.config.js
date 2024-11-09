@@ -13,7 +13,8 @@ export default {
         'primary': '#1f2937',
         'gray-outline': '#d1d5db',
         'gray-1': '#f3f4f6',
-        'gray-2': '#9ca3af'
+        'gray-2': '#9ca3af',
+        'gray-3': '#6b7280'
       },
     },
   },

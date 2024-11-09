@@ -22,7 +22,7 @@ function classNames(...classes) {
 
 export const User: React.FC<UserProps> = ({className}) => {
      return (
-        <div className={classNames('flex text-gray-2', className)}>
+        <div className={classNames('flex text-gray-3', className)}>
             <div className='space-y-1 px-2 flex items-center justify-between'>
                 <div className='flex items-center'>
                     <img
@@ -41,7 +41,7 @@ export const User: React.FC<UserProps> = ({className}) => {
                 {menuItems.map((item) => (
                     <div
                             key={item.name}
-                            className={classNames('bg-white text-gray-2', 'rounded-md px-3 py-2 text-sm font-medium')}
+                            className={classNames('bg-white text-gray-3', 'rounded-md px-3 py-2 text-sm font-medium')}
                     >
                         {item.name}
                     </div>
