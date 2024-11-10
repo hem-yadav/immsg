@@ -22,7 +22,7 @@ function classNames(...classes) {
 
 export const RenderHeader = () => {
   return (
-    <Disclosure as="nav" className="bg-white shadow-md pb-2">
+    <Disclosure as="header" className="bg-white shadow-md pb-2">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between border:none sm:border-b mb-2">
           <div className="flex items-center justify-center sm:items-stretch sm:justify-start">

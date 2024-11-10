@@ -9,6 +9,27 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
+      fontSize: {
+        'h1': '2.25rem', // 36px
+        'h2': '1.875rem', // 30px
+        'h3': '1.5rem',   // 24px
+        'h4': '1.25rem',  // 20px
+      },
+      fontWeight: {
+        'h1': '700',      // Bold
+        'h2': '600',      // Semi-bold
+        'h3': '500',      // Medium
+        'h4': '500',      // Medium
+      },
+      lineHeight: {
+        'h1': '1.2',
+        'h2': '1.3',
+        'h3': '1.4',
+        'h4': '1.5',
+      },
       colors: {
         'primary': '#1f2937',
         'gray-outline': '#d1d5db',
