@@ -25,6 +25,11 @@
     cursor: pointer;
     width: 100px;
   }
+
+  footer::before{
+    content: '';
+    @apply block text-white rounded-br-2xl rounded-bl-2xl bg-white w-full h-10 mb-4;
+  }
   
   .menu {
     background-color: royalblue;

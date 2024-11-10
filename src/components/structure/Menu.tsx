@@ -25,7 +25,7 @@ export const RenderMenu: React.FC<RenderMenuProps> = ({ className }) => {
                          onClick={()=>setSelectedMenu(item.path)}
                          aria-current={item.path === selectedMenu ? 'page' : undefined}
                          className={classNames(
-                              item.path === selectedMenu ? 'bg-gray-1 text-black' : 'bg-white text-black',
+                              item.path === selectedMenu ? 'bg-gray-1 text-black' : 'bg-transparent text-black',
                          'rounded-md px-3 py-2 text-sm font-medium'
                          )}
                     >

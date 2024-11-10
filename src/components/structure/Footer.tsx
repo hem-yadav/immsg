@@ -30,23 +30,24 @@ const footerItems = [{
 
 export const RenderFooter = () => {
 return (
-<footer className="bg-white shadow-top pt-10">
-  <div className='flex flex-row justify-between items-center gap-8 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-    <Logo className="h-12 w-auto"/>
-    <div className='flex-1 flex flex-col items-center'>
-        <div className='flex py-2 mb-4 border-b border-gray-outline'>
+<footer className="bg-[#FA4032]">
+  <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+    <Logo className="h-12 w-auto ml-2 sm:ml-0"/>
+    <div className='flex-1 flex flex-col items-start sm:items-center'>
+        <div className='flex flex-col sm:flex-row justify-center w-full py-2'>
             {footerItems.map((item) => (
                <Link to={item.path}>
                     <div
                          key={item.name}
-                         className='bg-white text-black rounded-md px-3 py-2 text-sm font-medium'
+                         className='bg-transparent text-white rounded-md px-3 py-2 text-sm font-medium'
                     >
                          {item.name}
                     </div>
               </Link>
             ))}
-          </div>
-        <div className='flex flex-col items-center'>
+        </div>
+        <div className='w-full mb-4 border-b border-gray-outline'></div>
+        <div className='flex flex-col items-start sm:items-center text-white ml-2 sm:ml-0'>
           <p>© 2024 Newland Chase</p>
           <p>Australian Migration Agents Registration Authority Number 9902581</p>
           <div className='flex justify-center gap-10 my-2'>
@@ -58,7 +59,7 @@ return (
           </div>
         </div>
     </div>
-    <div className='flex flex-col'>
+    <div className='flex flex-col text-white ml-2 sm:ml-0'>
       <div className='font-semibold'>Global<br/> Headquarters</div>
       <div className='whitespace-pre-line'>
         Skyline House,<br/>
