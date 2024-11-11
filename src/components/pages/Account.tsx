@@ -1,4 +1,4 @@
-import { useAuthData } from "../../auth/AuthContext";
+import { useAuthData } from "../../context";
 import React from 'react';
 
 export const Account: React.FC = () => {

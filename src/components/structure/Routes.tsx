@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { useAuthData } from "../../auth/AuthContext";
+import { useAuthData } from "../../context";
 import { nav } from "./navigation";
 
 export const RenderRoutes = () => {

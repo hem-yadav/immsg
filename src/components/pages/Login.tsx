@@ -1,6 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { useAuthData } from "../../auth/AuthContext";
+import { useAuthData } from "../../context";
 
 interface FormData {
   userName: string;
