@@ -34,14 +34,14 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
 
     return (
         <AuthContext.Provider value={{ user, login, logout }}>
-            <>
-                <RenderHeader />
-                <RenderRoutes />
-                <div className="flex-auto">
-                    {children}
-                </div>
-                <RenderFooter />
-            </>
+                <>
+                    <RenderHeader />
+                    <RenderRoutes />
+                    <div className="flex-auto">
+                        {children}
+                    </div>
+                    <RenderFooter />
+                </>
         </AuthContext.Provider>
     );
 };

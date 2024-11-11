@@ -41,7 +41,7 @@ export const RMenuItems = ({menuItems, className}) => {
         >
             {
               //@ts-ignore
-              menuItems.map(({name})=> <Item {...{name}}/>)  
+              menuItems.map(({name})=> <Item key={name} {...{name}}/>)  
             }
         </MenuItems>
       </Menu>

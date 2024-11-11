@@ -31,7 +31,7 @@ export const Login: React.FC = () => {
 
   return (
     <div className="page">
-      <h2>Login page</h2>
+      <div className='text-3xl text-center pb-4'>LOGIN</div>
       <div className="inputs">
         <div className="input">
           <input

@@ -4,7 +4,7 @@ export const Home: React.FC = () => {
     return (
         <div className="page">
             <h2>
-                Hello world! We are in Home Page
+                Coming Soon! Watch out this space..!!
             </h2>
         </div>
     );

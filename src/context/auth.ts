@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, Dispatch, SetStateAction, useContext } from "react";
 
 interface User {
     name: string;
@@ -29,4 +29,24 @@ const useAuthData = () => {
     return context;
 };
 
-export { AuthContext, useAuthData };
+interface AppContextType {
+    selectedMenu: string,
+    setSelectedMenu: Dispatch<SetStateAction<string>>;
+}
+
+const AppContext = createContext<AppContextType>({
+    selectedMenu: "/",
+    setSelectedMenu: () => {
+        throw new Error("logout function must be overridden in AuthWrapper");
+    }
+});
+
+const useAppData = () => {
+    const context = useContext(AppContext);
+    if (!context) {
+        throw new Error("useAppData must be used within an AppWrapper");
+    }
+    return context;
+};
+
+export { AuthContext, useAuthData, AppContext, useAppData };

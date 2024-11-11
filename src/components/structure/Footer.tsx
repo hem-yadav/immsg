@@ -1,4 +1,3 @@
-import { Menu, MenuItem, MenuItems } from '@headlessui/react'
 import { Logo } from './Logo';
 import { FacebookIcon, InstagramIcon, XIcon, GithubIcon, YoutubeIcon} from "../../icons/index";
 import { Link } from 'react-router-dom';
@@ -36,7 +35,7 @@ return (
     <div className='flex-1 flex flex-col items-start sm:items-center'>
         <div className='flex flex-col sm:flex-row justify-center w-full py-2'>
             {footerItems.map((item) => (
-               <Link to={item.path}>
+               <Link to={item.path} key={item.name}>
                     <div
                          key={item.name}
                          className='bg-transparent text-white rounded-md px-3 py-2 text-sm font-medium'

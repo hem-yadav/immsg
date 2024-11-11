@@ -3,6 +3,7 @@ import { AuthWrapper, NetworkStatusWrapper } from './wrappers';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './App.css';
 import './input.css';
+import { AppWrapper } from './wrappers/app';
 
 const queryClient = new QueryClient({defaultOptions: {
   queries: {},
@@ -14,7 +15,9 @@ const App = () => {
       <QueryClientProvider client={queryClient}>
         <NetworkStatusWrapper>
             <BrowserRouter>
-              <AuthWrapper />
+            <AppWrapper>
+              <AuthWrapper/>
+            </AppWrapper>
             </BrowserRouter>      
         </NetworkStatusWrapper>
       </QueryClientProvider>
