@@ -1,7 +1,7 @@
 import React from "react"
 
 export const YoutubeIcon = () => (
-    <svg className="w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <svg className="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path d="M23.498 6.186c-.29-1.093-1.147-1.95-2.241-2.24C19.268 3.5 12 3.5 12 3.5s-7.268 0-9.257.446c-1.094.29-1.951 1.147-2.241 2.24C0 8.176 0 12 0 12s0 3.824.502 5.814c.29 1.093 1.147 1.95 2.241 2.24C4.732 20.5 12 20.5 12 20.5s7.268 0 9.257-.446c1.094-.29 1.951-1.147 2.241-2.24.502-1.99.502-5.814.502-5.814s0-3.824-.502-5.814zM9.545 15.568V8.432L15.818 12 9.545 15.568z"/>
      </svg>
 )

@@ -35,7 +35,8 @@ export default {
         'gray-outline': '#d1d5db',
         'gray-1': '#f3f4f6',
         'gray-2': '#9ca3af',
-        'gray-3': '#6b7280'
+        'gray-3': '#6b7280',
+        'red-1': '#FA4032'
       },
       boxShadow: {
         'top': '0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06)',

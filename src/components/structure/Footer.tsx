@@ -30,9 +30,9 @@ const footerItems = [{
 
 export const RenderFooter = () => {
 return (
-<footer className="bg-[#FA4032]">
+<footer className="bg-red-1">
   <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-    <Logo className="h-12 w-auto ml-2 sm:ml-0"/>
+    <Logo className="h-12 w-auto ml-2 sm:ml-0" color="white"/>
     <div className='flex-1 flex flex-col items-start sm:items-center'>
         <div className='flex flex-col sm:flex-row justify-center w-full py-2'>
             {footerItems.map((item) => (
